@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pysio-pyemg-cometa"
-version = "0.0.1"
-requires-python = ">=3.7"
+dynamic = ["version"]
+requires-python = ">=3.7,<3.14"
 authors = [
   { name="Maxim Yudayev", email="maxim.yudayev@gmail.com" },
   { name="e-Media Research Lab @ KU Leuven" },
@@ -38,6 +38,9 @@ pyemg_cometa = ["lib/*.dll"]
 
 [tool.setuptools]
 platforms = ["win32", "win-amd64"]
+
+[tool.setuptools.dynamic]
+version = {attr = "pyemg_cometa.__version__.__version__"}
 
 [project.urls]
 Repository = "https://github.com/maximyudayev/pyemg-cometa.git"

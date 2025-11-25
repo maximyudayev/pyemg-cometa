@@ -8,5 +8,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## PyEMG Cometa
 
+### 0.0.2 <small>November 25, 2025</small>
+- Installation instructions and packaged DLLs.
+
 ### 0.0.1 <small>October 22, 2025</small>
 - Initial public release of a wrapper library for Waveplus sEMG devices of Cometa.
